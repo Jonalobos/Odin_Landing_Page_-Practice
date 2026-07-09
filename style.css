@@ -1,0 +1,158 @@
+
+
+:root{
+
+    --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    /* hero var */
+
+    --hero-header-and-footer-color:#1F2937;
+    --hero-main-text-size:48px;
+    --hero-main-text-color:#F9FAF8;
+    --hero-main-text-weight:900px;
+
+    --hero-secondary-text-color:#E5E7EB;
+    --hero-secondary-text-size:18px;
+
+    --hero-logo-text-color:#F9FAF8;
+    --hero-logo-text-size:24px;
+
+    --button-color:#3882F6;
+
+}
+
+*{
+
+    box-sizing: border-box;
+    font-family: var(--font);
+    margin: 0;
+    text-decoration: none;
+}
+
+header{
+    
+    background-color: var(--hero-header-and-footer-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--hero-logo-text-color);
+    padding: 15px;
+    
+
+}
+
+header h1{
+
+    font-size:var(--hero-logo-text-size);
+
+}
+
+header ul, a{
+
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 15px;
+    color: var(--hero-logo-text-color);
+    
+}
+
+.Hero{
+
+    background-color: var(--hero-header-and-footer-color);
+    color: var(--hero-main-text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding: 100px;
+
+}
+
+.hero-group{
+    
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.hero-group h1{
+
+    font-size: var(--hero-main-text-size);
+
+}
+
+.hero-group button{
+
+    width: 100px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    color: var(--hero-secondary-text-color);
+    background-color:var(--button-color);
+    
+
+}
+
+.hero-group p{
+
+    font-size: var(--hero-secondary-text-size);
+    color: var(--hero-secondary-text-color);
+
+}
+
+.Hero .place-holde-img{
+
+    width: 510px;
+    height: 200px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.info-section{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50px 150px;
+    gap: 50px;
+
+
+}
+
+.info-countainer{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    
+
+}
+
+.info-img{
+
+    width: 100%;
+    height: 150px;
+    border: solid var(--button-color);
+    border-radius: 10px;
+}
+
+.card-info{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+
+}
