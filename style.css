@@ -19,6 +19,10 @@
 
     --button-color:#3882F6;
 
+    --quote-bg-color:#E5E7EB;
+    --quote-bg-text-size:36px;
+    --quote-bg-text-weight:300;
+
 }
 
 *{
@@ -27,6 +31,12 @@
     font-family: var(--font);
     margin: 0;
     text-decoration: none;
+}
+
+button{
+
+    font-weight: bolder;
+    font-size: 16px;
 }
 
 header{
@@ -135,7 +145,7 @@ header ul, a{
     flex-direction: row;
     align-items: center;
     gap: 50px;
-    
+    flex-wrap: wrap;
 
 }
 
@@ -154,5 +164,72 @@ header ul, a{
     align-items: center;
     text-align: center;
     gap: 10px;
+
+}
+
+.quote{
+
+    background-color: var(--quote-bg-color);
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+
+
+}
+
+.quote-text{
+
+    align-self: center;
+    width: 815px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.quote-text p{
+
+    font-size: var(--quote-bg-text-size);
+    font-weight: var(--quote-bg-text-weight);
+
+}
+
+.quote-text h2{
+
+    align-self: flex-end;
+
+}
+
+.banner{
+
+
+    background-color:var(--button-color);
+    margin: 100px;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: var(--hero-logo-text-color);
+
+}
+
+.banner button{
+
+    background-color: var(--button-color);
+    border: solid var(--hero-logo-text-color) 2px;
+    color: var(--hero-logo-text-color);
+    width: 125px;
+    border-radius: 10px;
+    
+
+}
+
+footer{
+
+    background-color: var(--hero-header-and-footer-color);
+    text-align: center;
+    color:white;
+    padding: 40px;
 
 }
